@@ -38,3 +38,29 @@ const copy_password = () => {
         console.error('Failed to copy password to clipboard: ', err);
     });
 };
+
+// const addPasswordToHistory = (password) => {
+//     // Add new password to the beginning of the history array
+//     history.unshift(password);
+
+//     // Keep only the last 5 passwords
+//     if (history.length > 5) {
+//         history.pop();
+//     }
+
+//     // Update the displayed history
+//     updateHistoryDisplay();
+// };
+
+// const updateHistoryDisplay = () => {
+//     // Clear the current list
+//     historyList.innerHTML = '';
+
+//     // Add each password in history to the list
+//     history.forEach((password, index) => {
+//         const li = document.createElement('li');
+//         li.textContent = password;
+//         li.classList.add('history-list-item');
+//         historyList.appendChild(li);
+//     });
+// };
