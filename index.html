@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator by Hishaam</title>
+</head>
+<body>
+    <div class="container">
+        <h1><span>Password</span> Generator</h1>
+        <div class="display">
+            <input
+                type="text"
+                placeholder="Password"
+                id="generator"
+                readonly
+            >
+            <span
+                id="copy"
+                onclick="copy_password()"
+            >
+                Copy
+            </span>
+        </div>
+        <button
+            id="btn"
+            onclick="generator_pasword()"
+        >
+            Generate
+        </button>
+    </div>
+
+    <!-- <div class="historique">
+        <h1><span>Password</span> Historique</h1>
+    </div> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
